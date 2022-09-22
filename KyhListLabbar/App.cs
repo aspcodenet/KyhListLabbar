@@ -222,9 +222,9 @@ public class App
         for (int i = 0; i < 4; i++)
         {
             Console.WriteLine($"Ange mätning temperatur {i + 1}:");
-            matningar[i] = Convert.ToInt32(Console.ReadLine());
+            matningar.Add(Convert.ToInt32(Console.ReadLine()));
             Console.WriteLine($"Plats för mätningen?");
-            platser[i] = Console.ReadLine();
+            platser.Add(Console.ReadLine());
         }
 
         decimal sum = 0;
